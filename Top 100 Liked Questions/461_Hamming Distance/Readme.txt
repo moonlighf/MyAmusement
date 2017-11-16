@@ -1,26 +1,25 @@
-Question:
+Â·Question:
 
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 Given two integers x and y, calculate the Hamming distance.
-Á½¸öÂë×ÖµÄ¶ÔÓ¦±ÈÌØÈ¡Öµ²»Í¬µÄ±ÈÌØÊý³ÆÎªÕâÁ½¸öÂë×ÖµÄº£Ã÷¾àÀë¡£
-¾ÙÀýÈçÏÂ£º10101ºÍ00110´ÓµÚÒ»Î»¿ªÊ¼ÒÀ´ÎÓÐµÚÒ»Î»¡¢µÚËÄ¡¢µÚÎåÎ»²»Í¬£¬Ôòº£Ã÷¾àÀëÎª3¡£
+ä¸¤ä¸ªç å­—çš„å¯¹åº”æ¯”ç‰¹å–å€¼ä¸åŒçš„æ¯”ç‰¹æ•°ç§°ä¸ºè¿™ä¸¤ä¸ªç å­—çš„æµ·æ˜Žè·ç¦»ã€‚
+ä¸¾ä¾‹å¦‚ä¸‹ï¼š10101å’Œ00110ä»Žç¬¬ä¸€ä½å¼€å§‹ä¾æ¬¡æœ‰ç¬¬ä¸€ä½ã€ç¬¬å››ã€ç¬¬äº”ä½ä¸åŒï¼Œåˆ™æµ·æ˜Žè·ç¦»ä¸º3ã€‚
 
-Ë¼Â·£º
-ÎªÁË½â¾öÕâ¸öÎÊÌâ£¬ÐèÒªÁ½¸ö²½Öè£º
-1.½«Ëù¸øÕûÐÎÊý×Ö×ª»»Îª¶þ½øÖÆ
-2.¶þ½øÖÆÂë°´ÕÕÊýÎ»ÅÐ¶ÏÊÇ·ñÏàÍ¬
+Â·æ€è·¯ï¼š
+ä¸ºäº†è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œéœ€è¦ä¸¤ä¸ªæ­¥éª¤ï¼š
+1.å°†æ‰€ç»™æ•´å½¢æ•°å­—è½¬æ¢ä¸ºäºŒè¿›åˆ¶
+2.äºŒè¿›åˆ¶ç æŒ‰ç…§æ•°ä½åˆ¤æ–­æ˜¯å¦ç›¸åŒ
 
 
-¹ØÓÚµÚÒ»µã£º
-pythonÀïÃæ×ª»»¶þ½øÖÆÓÐÄÚÖÃº¯Êý bin
+Â·å…³äºŽç¬¬ä¸€ç‚¹ï¼š
+pythoné‡Œé¢è½¬æ¢äºŒè¿›åˆ¶æœ‰å†…ç½®å‡½æ•° bin
 >>> b = bin(3) 
 >>> b
 '0b11'
->>> type(b) #»ñÈ¡bµÄÀàÐÍ
+>>> type(b) #èŽ·å–bçš„ç±»åž‹
 <class 'str'>
 
-¹ØÓÚµÚ¶þµã£º
-pythonÀïÃæÓÐ×Ö·û´®µÄÇÐÆ¬¹¤¾ß£¬
-a[i-1:i] = b[i-1:i] £¿£¿£¿   È¡³öµÚ i-1 ¸ö×Ö·ûºÍbµÄµÚ i-1 ¸ö×Ö·û ±È½Ï£¬²»Í¬Ôòcount +1
+Â·å…³äºŽç¬¬äºŒç‚¹ï¼š
+ç›´æŽ¥å–å‡ºç¬¬ i ä¸ªå…ƒç´  è¿›è¡Œæ¯”è¾ƒ
 
 
