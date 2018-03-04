@@ -28,3 +28,13 @@ class Solution(object):
                 
 但是时间会超出限。
 
+这里有一个方法，贼厉害！！！！！  利用异或的思想
+
+If we take XOR of zero and some bit, it will return that bit
+a xor 0 = a
+If we take XOR of two same bits, it will return 0
+a xo a = 0
+
+a xor b xor a = a xor a xor b = b
+
+所以连续求完异或的最终结果就是唯一单独的元素
