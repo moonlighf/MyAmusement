@@ -9,3 +9,22 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 注意：
 
 你的算法应该有个线性的执行时间复杂度，你能够实现这个而不使整个内存
+
+
+思路：
+
+首先想到的是利用列表的count操作，这样可以直接得到每个元素出现的次数：
+
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        myset = set(nums)
+        for item in myset:
+            if nums.count(item) == 1:
+                return item
+                
+但是时间会超出限。
+
