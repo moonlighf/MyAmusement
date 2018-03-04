@@ -1,0 +1,11 @@
+Given an array of integers, every element appears twice except for one. Find that single one.
+
+Note:
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory
+
+翻译：
+给定一个整数数组，每个元素出现了两次，仅仅一个元素出现一次，找出这个元素
+
+注意：
+
+你的算法应该有个线性的执行时间复杂度，你能够实现这个而不使整个内存
