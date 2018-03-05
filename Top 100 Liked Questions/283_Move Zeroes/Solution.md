@@ -48,7 +48,7 @@ For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums sh
 
 产生一个`temp_list`作为临时列表存储`nums`里面的非0元素；然后统计`nums`里面的0元素数量，生成一个全为0的list，然后两者组合。
 
-### Code：
+**Code：**
 时间：59-60ms
 
 	class Solution(object):
@@ -62,7 +62,11 @@ For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums sh
 	        nums[:len(temp_list)] = temp_list
 	        nums[len(temp_list):] = [0]*count_0
 
-### 最短耗时时间（48ms）的人的Code：
+**短耗时时间（48ms）的人的Code：**
+
+**思路：**记录最后一个非零的元素的下标，前面的数在循环的过程中已经改变，最后只需要把下标后面到最终长度的这部分全部置0即可。
+
+
 	class Solution(object):
 	    def moveZeroes(self, nums):
 	        """
