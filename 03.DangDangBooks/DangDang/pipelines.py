@@ -15,9 +15,9 @@ class DangdangPipeline(object):
     def process_item(self, item, spider):
         # ========================================================================================
         # Mysql connect
-        conn = pymysql.connect(host="127.0.0.1",
+        conn = pymysql.connect(host="",
                                user="root",
-                               password="yeshenzn,./123.",
+                               password="",
                                db="dangdang",
                                charset="utf8")
         cur = conn.cursor()
